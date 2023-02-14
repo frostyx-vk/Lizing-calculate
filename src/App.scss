@@ -15,3 +15,91 @@
   justify-content: center;
   align-items: center;
 }
+
+.main__layout {
+  width: 100%;
+  padding: 0 calc(48 * ((100vw - 320px) / (1440 - 320)));
+
+  h1 {
+    width: calc(279px + (753 - 279) * ((100vw - 320px) / (1440 - 320)));
+    margin-bottom: calc(16px + (32 - 16) * ((100vw - 320px) / (1440 - 320)));
+    font-family: NekstBlack, serif;
+    font-weight: 900;
+    font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (1440 - 320)));
+    line-height: 93%;
+  }
+
+  h4 {
+    font-family: Gilroy, serif;
+    font-weight: 400;
+    font-size: calc(16 * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1920px) {
+  .main__layout {
+    padding: 0 calc(90 * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .main__layout {
+    padding: 0 calc(48 * ((100vw - 320px) / (1120 - 320)));
+
+    h1 {
+      width: calc(279px + (753 - 279) * ((100vw - 320px) / (1120 - 320)));
+      margin-bottom: calc(16px + (32 - 16) * ((100vw - 320px) / (1120 - 320)));
+      font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (1120 - 320)));
+    }
+
+    h4 {
+      font-size: calc(16 * ((100vw - 320px) / (1120 - 320)));
+    }
+  }
+}
+
+@media (max-width: 1119.98px) {
+  #root {
+    display: block;
+  }
+
+  .main__layout {
+    min-width: 696px;
+    padding: calc(64 * ((100vw - 320px) / (768 - 320)))
+    calc(36 * ((100vw - 320px) / (768 - 320)))
+    calc(156 * ((100vw - 320px) / (768 - 320)));
+
+    h1 {
+      width: 100%;
+      margin-bottom: calc(16px + (40 - 16) * ((100vw - 320px) / (768 - 320)));
+      font-size: calc(34px + (54 - 34) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    h4 {
+      font-size: calc(16 * ((100vw - 320px) / (768 - 320)));
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    display: block;
+  }
+
+  .main__layout {
+    min-width: 280px;
+    padding: calc(44 * (100vw / 320))
+    calc(20 * (100vw / 320))
+    calc(64 * (100vw / 320));
+
+    h1 {
+      width: calc(220 * (100vw / 320));
+      margin-bottom: calc(30 * (100vw / 320));
+      font-size: calc(34 * (100vw / 320));
+    }
+
+    h4 {
+      font-size: calc(14 * (100vw / 320));
+    }
+  }
+}

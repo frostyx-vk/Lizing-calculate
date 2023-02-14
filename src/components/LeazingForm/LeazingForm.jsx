@@ -4,13 +4,14 @@ import { InitialFeeField } from '../InputFields/InitialFeeField';
 import { LeasingTermField } from '../InputFields/LeasingTermField';
 import { LeasingAgreementField } from '../InfoFields/LeasingAgreementField';
 import { MonthPayField } from '../InfoFields/MonthPayField';
+import './LeazingForm.scss';
 
 export const LeazingForm = () => {
 
     return (
-        <form >
+        <form className="leasing__form">
             <h1>Рассчитайте стоимость автомобиля в лизинг</h1>
-            <div className="leasing_form-inputs">
+            <div className="leasing__form-inputs">
                 <CarPriceField
                 />
                 <InitialFeeField
@@ -18,12 +19,12 @@ export const LeazingForm = () => {
                 <LeasingTermField
                 />
             </div>
-            <div className="leasing_form-info">
+            <div className="leasing__form-info">
                 <LeasingAgreementField
                 />
                 <MonthPayField
                 />
-                <button type="submit" >
+                <button type="submit" > Оставить заявку
                 </button>
             </div>
         </form>

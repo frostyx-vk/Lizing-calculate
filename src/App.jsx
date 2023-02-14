@@ -3,7 +3,7 @@ import './App.scss';
 import { LeazingForm } from './components/LeazingForm/LeazingForm';
 
 export const App = () => (
-    <div >
+    <div className="main__layout">
         <LeazingForm />
     </div>
 );

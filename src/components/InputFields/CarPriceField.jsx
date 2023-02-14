@@ -1,12 +1,13 @@
 import React from 'react';
 import { RangeInput } from './RangeInput';
+import './InputFields.scss';
 
 export const CarPriceField = () => {
 
     return (
-        <div className="car_price-container">
+        <div className="car__price-container">
             <h4>Стоимость автомобиля</h4>
-            <div className="car_price-input">
+            <div className="car__price-input">
                 <input
                     type="text"
                 />
