@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Gilroy;
+  src: local("Gilroy"),
+    url("./assets/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: NekstBlack;
+  src: local("NekstBlack"),
+    url("./assets/fonts/Nekst/Nekst-Black.ttf") format("truetype");
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
